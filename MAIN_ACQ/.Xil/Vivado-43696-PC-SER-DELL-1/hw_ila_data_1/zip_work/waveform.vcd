@@ -1,0 +1,42 @@
+$date
+        2022-Jan-10 14:05:58
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " \inst_MULTYCHANNEL/pp1[0].Inst_single_channel/time_t $end
+$var reg 1 # \inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Time_o_Pulser $end
+$var reg 1 $ \inst_MULTYCHANNEL/pp1[1].Inst_single_channel/time_t $end
+$var reg 1 % PULSER_Out $end
+$var reg 1 & PPS $end
+$var reg 1 ' empty $end
+$var reg 1 ( u_ila_0_prog_full $end
+$var reg 1 ) \inst_MULTYCHANNEL/pp1[14].Inst_single_channel/time_t $end
+$var reg 1 * _TRIGGER $end
+$var reg 1 + _WINDOW $end
+$var reg 1 , _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+0#
+1$
+0%
+0&
+0'
+1(
+1)
+0*
+1+
+0,
+$end
+#96
+1&
+1*
+#97
+0&

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep  5 19:27:51 2024
+# Process ID: 23988
+# Current directory: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log TOP_block_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_block_processing_system7_0_0.tcl
+# Log file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1/TOP_block_processing_system7_0_0.vds
+# Journal file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_block_processing_system7_0_0.tcl -notrace

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="4" DIGEST="">
+	<TOOL_VERSION Version="2019.2"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="infn.it:mpmt:1.0" PART="xc7z014sclg484-2" ARCH="zynq" PACKAGE="clg484" DEVICE="7z014s" SPEED="-2"/>
+	<HIERARCHY Name="TOP"/>
+	<File Type="HW_HANDOFF" Name="TOP_block.hwh" DESIGN_HIERARCHY="TOP_block_i/TOP_block_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BD_TCL" Name="TOP_block_bd.tcl">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h">
+	</File>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html">
+	</File>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl">
+	</File>
+	<File Type="BIT" Name="TOP.bit">
+	</File>
+	<BOARD Type="NotIntegrated">
+		<BASEBOARD Name="infn.it:mpmt:1.0">
+		</BASEBOARD>
+	</BOARD>
+	<USEDRESOURCES/>
+</Project>
+

@@ -1,0 +1,454 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep  5 19:46:52 2024
+| Host         : PC-SER-DELL-1 running 64-bit major release  (build 9200)
+| Command      : report_drc -file TOP_drc_routed.rpt -pb TOP_drc_routed.pb -rpx TOP_drc_routed.rpx
+| Design       : TOP
+| Device       : xc7z014sclg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 79
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CHECK-3     | Warning  | Report rule limit reached                                   | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 38         |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 19         |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| RTSTAT-10   | Warning  | No routable loads                                           | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/next_state is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2/O, cell inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_blocco_time/timeandtime_ready is a gated clock net sourced by a combinational pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1/O, cell inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#17 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#18 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+PLHOLDVIO-2#19 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_blocco_time/dato_stabile_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/dato_stabile_reg
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_33) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[0] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/ENA_I_198) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[0] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[1] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[2] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[3] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/ENA_I_201) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[0] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[1] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[2] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[3] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/ENA_I_204) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[0] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[1] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[2] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[1]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[3] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_2[1]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/ENA_I_207) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[2] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/WEA[3] (net: FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1[0]) which is driven by a register (inst_MULTYCHANNEL/Inst_raccolta_dati/write_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+44 net(s) have no routable loads. The problem bus(es) and/or net(s) are FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i (the first 15 of 28 listed).
+Related violations: <none>
+
+

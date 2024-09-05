@@ -1,0 +1,289 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Thu Sep  5 19:47:09 2024
+| Host             : PC-SER-DELL-1 running 64-bit major release  (build 9200)
+| Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
+| Design           : TOP
+| Device           : xc7z014sclg484-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.362        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.184        |
+| Device Static (W)        | 0.178        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 57.8         |
+| Junction Temperature (C) | 52.2         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.186 |       19 |       --- |             --- |
+| Slice Logic              |     0.030 |    29869 |       --- |             --- |
+|   LUT as Logic           |     0.025 |     8972 |     40600 |           22.10 |
+|   Register               |     0.003 |    15445 |     81200 |           19.02 |
+|   CARRY4                 |    <0.001 |      811 |     13300 |            6.10 |
+|   LUT as Shift Register  |    <0.001 |      264 |     17400 |            1.52 |
+|   F7/F8 Muxes            |    <0.001 |      167 |     53200 |            0.31 |
+|   LUT as Distributed RAM |    <0.001 |       22 |     17400 |            0.13 |
+|   Others                 |     0.000 |     1740 |       --- |             --- |
+| Signals                  |     0.058 |    22135 |       --- |             --- |
+| Block RAM                |     0.039 |       94 |       107 |           87.85 |
+| MMCM                     |     0.131 |        1 |         4 |           25.00 |
+| I/O                      |     0.602 |      167 |       200 |           83.50 |
+| PS7                      |     1.138 |        1 |       --- |             --- |
+| Static Power             |     0.178 |          |           |                 |
+| Total                    |     2.362 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.344 |       0.320 |      0.024 |
+| Vccaux    |       1.800 |     0.123 |       0.105 |      0.018 |
+| Vcco33    |       3.300 |     0.122 |       0.121 |      0.001 |
+| Vcco25    |       2.500 |     0.055 |       0.054 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.012 |       0.003 |      0.009 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.729 |       0.690 |      0.039 |
+| Vccpaux   |       1.800 |     0.030 |       0.020 |      0.010 |
+| Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |
+| Vcco_ddr  |       1.350 |     0.280 |       0.278 |      0.002 |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                   |
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                          |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                          |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view |
+| Internal nodes activity     | High       | User specified more than 25% of internal nodes         |                                                                                                          |
+| Device models               | High       | Device models are Production                           |                                                                                                          |
+|                             |            |                                                        |                                                                                                          |
+| Overall confidence level    | Low        |                                                        |                                                                                                          |
++-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+-----------------------------------------------------------------------------------+-----------------+
+| Clock              | Domain                                                                            | Constraint (ns) |
++--------------------+-----------------------------------------------------------------------------------+-----------------+
+| CLK_25MHZ          | CLK_25MHZ                                                                         |            40.0 |
+| CLK_25MHZ_Gen      | Inst_CLK_SAFE/Mast_CLK25MHz                                                       |            40.0 |
+| REF_CLK2_P         | REF_CLK2_P                                                                        |            40.0 |
+| REF_CLK2_P_Gen     | Inst_CLK_SAFE/Mast_CLK25MHz                                                       |            40.0 |
+| REF_CLK_P          | REF_CLK_P                                                                         |            40.0 |
+| REF_CLK_P_Gen      | Inst_CLK_SAFE/Mast_CLK25MHz                                                       |            40.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| RING_OSC           | inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/FREQ  |             4.0 |
+| clk_out1_clk_wiz_0 | multiphase_clock/inst/clk_out1_clk_wiz_0                                          |             5.0 |
+| clk_out2_clk_wiz_0 | multiphase_clock/inst/clk_out2_clk_wiz_0                                          |             5.0 |
+| clk_out3_clk_wiz_0 | multiphase_clock/inst/clk_out3_clk_wiz_0                                          |             5.0 |
+| clk_out4_clk_wiz_0 | multiphase_clock/inst/clk_out4_clk_wiz_0                                          |             5.0 |
+| clk_out5_clk_wiz_0 | multiphase_clock/inst/clk_out5_clk_wiz_0                                          |             5.0 |
+| clk_out6_clk_wiz_0 | multiphase_clock/inst/clk_out6_clk_wiz_0                                          |             5.0 |
+| clk_out7_clk_wiz_0 | multiphase_clock/inst/clk_out7_clk_wiz_0                                          |             5.0 |
+| clkfbout_clk_wiz_0 | multiphase_clock/inst/clkfbout_clk_wiz_0                                          |            40.0 |
++--------------------+-----------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------+-----------+
+| Name                            | Power (W) |
++---------------------------------+-----------+
+| TOP                             |     2.184 |
+|   FIFO_DATA_32bit               |     0.035 |
+|     U0                          |     0.035 |
+|       inst_fifo_gen             |     0.035 |
+|   I2C_SCL_IOBUF_inst            |     0.008 |
+|   I2C_SDA_IOBUF_inst            |     0.008 |
+|   Inst_pps_module2              |     0.003 |
+|   RunControl_AXI_inst           |     0.012 |
+|     RAM_PWR_EN                  |     0.005 |
+|       U0                        |     0.005 |
+|   TOP_block_i                   |     1.207 |
+|     TOP_block_i                 |     1.207 |
+|       axi_dma_0                 |     0.030 |
+|       axi_interconnect_0        |     0.008 |
+|       axi_uartlite_1            |     0.001 |
+|       axis_data_fifo_0          |     0.017 |
+|       processing_system7_0      |     1.141 |
+|       ps7_0_axi_periph          |     0.009 |
+|   inst_MULTYCHANNEL             |     0.309 |
+|     Inst_Canale_secondi         |     0.003 |
+|     Inst_raccolta_dati          |     0.022 |
+|     pp1[0].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[10].Inst_single_channel |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[11].Inst_single_channel |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[12].Inst_single_channel |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[13].Inst_single_channel |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[14].Inst_single_channel |     0.014 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[15].Inst_single_channel |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[16].Inst_single_channel |     0.014 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[17].Inst_single_channel |     0.014 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[18].Inst_single_channel |     0.014 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[1].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[2].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[3].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[4].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.003 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[5].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.003 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[6].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.003 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[7].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.003 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[8].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.003 |
+|       Inst_blocco_time          |     0.005 |
+|     pp1[9].Inst_single_channel  |     0.015 |
+|       IBUFDS_IBUFDISABLE_inst   |     0.006 |
+|       Inst_CS_latch             |     0.002 |
+|       Inst_blocco_time          |     0.005 |
+|   multiphase_clock              |     0.132 |
+|     inst                        |     0.132 |
++---------------------------------+-----------+
+
+

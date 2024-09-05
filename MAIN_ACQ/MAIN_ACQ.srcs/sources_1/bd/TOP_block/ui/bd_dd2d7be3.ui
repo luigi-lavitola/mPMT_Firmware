@@ -1,0 +1,228 @@
+{
+   "ActiveEmotionalView":"Color Coded",
+   "Color Coded_ExpandedHierarchyInLayout":"",
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1590 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1590 -y 90 -defaultsOSRD
+preplace port AXI_STR_RXD_0 -pg 1 -lvl 0 -x -100 -y 290 -defaultsOSRD
+preplace port uart_Sama_boot -pg 1 -lvl 5 -x 1590 -y 530 -defaultsOSRD
+preplace port M00_AXI_0 -pg 1 -lvl 5 -x 1590 -y 780 -defaultsOSRD
+preplace port UART1_TX -pg 1 -lvl 5 -x 1590 -y 130 -defaultsOSRD
+preplace port UART1_RX -pg 1 -lvl 0 -x -100 -y 990 -defaultsOSRD
+preplace port I2C_SDA_I -pg 1 -lvl 0 -x -100 -y 190 -defaultsOSRD
+preplace port I2C_SDA_O -pg 1 -lvl 5 -x 1590 -y 200 -defaultsOSRD
+preplace port I2C_SDA_T -pg 1 -lvl 5 -x 1590 -y 230 -defaultsOSRD
+preplace port I2C_SCL_I -pg 1 -lvl 0 -x -100 -y 220 -defaultsOSRD
+preplace port I2C_SCL_O -pg 1 -lvl 5 -x 1590 -y 260 -defaultsOSRD
+preplace port I2C_SCL_T -pg 1 -lvl 5 -x 1590 -y 290 -defaultsOSRD
+preplace port FCLK_50 -pg 1 -lvl 5 -x 1590 -y 340 -defaultsOSRD
+preplace port FCLK_25 -pg 1 -lvl 5 -x 1590 -y 370 -defaultsOSRD
+preplace port CLK_200_main -pg 1 -lvl 0 -x -100 -y 320 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -lvl 5 -x 1590 -y 590 -defaultsOSRD
+preplace portBus peripheral_aresetn_0 -pg 1 -lvl 5 -x 1590 -y 620 -defaultsOSRD
+preplace portBus hash_in_0 -pg 1 -lvl 0 -x -100 -y 130 -defaultsOSRD
+preplace portBus time_in_0 -pg 1 -lvl 0 -x -100 -y 70 -defaultsOSRD
+preplace portBus date_in_0 -pg 1 -lvl 0 -x -100 -y 40 -defaultsOSRD
+preplace portBus version_in_0 -pg 1 -lvl 0 -x -100 -y 100 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -x 100 -y 810 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1310 -y 230 -defaultsOSRD
+preplace inst rst_ps7_0_200M -pg 1 -lvl 3 -x 860 -y 530 -swap {4 1 0 2 3 5 6 7 8 9} -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 2 -x 460 -y 340 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 860 -y 200 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -x 100 -y 310 -defaultsOSRD
+preplace inst axi_uartlite_1 -pg 1 -lvl 4 -x 1310 -y 540 -defaultsOSRD
+preplace inst version_ip_v1_0_0 -pg 1 -lvl 2 -x 460 -y 80 -defaultsOSRD
+preplace netloc processing_system7_0_UART1_TX 1 4 1 NJ 130
+preplace netloc UART1_RX_1 1 0 5 NJ 990 NJ 990 NJ 990 NJ 990 1540
+preplace netloc processing_system7_0_I2C1_SDA_O 1 4 1 1570J 200n
+preplace netloc processing_system7_0_I2C1_SDA_T 1 4 1 NJ 230
+preplace netloc I2C_SDA_I_1 1 0 5 -60J 200 NJ 200 630J -10 NJ -10 1530
+preplace netloc processing_system7_0_I2C1_SCL_T 1 4 1 NJ 290
+preplace netloc processing_system7_0_I2C1_SCL_O 1 4 1 1570J 260n
+preplace netloc I2C_SCL_I_1 1 0 5 NJ 220 NJ 220 620J -20 NJ -20 1560
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 3 690 0 NJ 0 1550
+preplace netloc processing_system7_0_FCLK_CLK2 1 4 1 NJ 370
+preplace netloc CLK_200_main_1 1 0 4 -80 400 270 450 670 350 1050
+preplace netloc rst_ps7_0_200M_peripheral_aresetn 1 0 5 -60 390 280 210 680 360 1030 620 1570J
+preplace netloc processing_system7_0_FCLK_CLK1 1 4 1 1570J 340n
+preplace netloc axi_dma_0_s2mm_introut 1 2 2 N 370 1040J
+preplace netloc hash_in_0_1 1 0 2 -60J 80 NJ
+preplace netloc time_in_0_1 1 0 2 NJ 70 240J
+preplace netloc date_in_0_1 1 0 2 NJ 40 NJ
+preplace netloc version_in_0_1 1 0 2 NJ 100 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ 90
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1050 200n
+preplace netloc AXI_STR_RXD_0_1 1 0 1 NJ 290
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 1 650 110n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 3 280J 770 680J 430 1040
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 1 260 290n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 4 NJ 780 NJ 780 NJ 780 NJ
+preplace netloc processing_system7_0_DDR 1 4 1 1570J 60n
+preplace netloc axi_uartlite_1_UART 1 4 1 NJ 530
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 5 -70 230 NJ 230 640J 10 NJ 10 1520
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 N 310
+preplace netloc axi_dma_0_M_AXI_SG 1 2 1 660 130n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 1 250 20n
+levelinfo -pg 1 -100 100 460 860 1310 1590
+pagesize -pg 1 -db -bbox -sgen -270 -40 1800 1760
+",
+   "Color Coded_ScaleFactor":"0.680952",
+   "Color Coded_TopLeft":"-485,-40",
+   "Default View_ScaleFactor":"0.342697",
+   "Default View_TopLeft":"-204,0",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"0.573197",
+   "Grouping and No Loops_TopLeft":"-147,-2",
+   "Interfaces View_Layers":"/RESET_IN_0_1:false|/rst_ps7_0_200M_peripheral_aresetn:false|/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK1:false|/CLK_200_main_1:false|/processing_system7_0_FCLK_CLK0:false|/processing_system7_0_FCLK_CLK2:false|",
+   "Interfaces View_ScaleFactor":"0.61",
+   "Interfaces View_TopLeft":"-456,0",
+   "No Loops_ScaleFactor":"0.360947",
+   "No Loops_TopLeft":"-529,0",
+   "Reduced Jogs_Layers":"/RESET_IN_0_1:true|/rst_ps7_0_200M_peripheral_aresetn:true|/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK1:true|/CLK_200_main_1:true|/processing_system7_0_FCLK_CLK0:true|/processing_system7_0_FCLK_CLK2:true|",
+   "Reduced Jogs_ScaleFactor":"0.314433",
+   "Reduced Jogs_TopLeft":"-226,0",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1800 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1800 -y 90 -defaultsOSRD
+preplace port AXI_STR_RXD_0 -pg 1 -lvl 0 -x 0 -y 1320 -defaultsOSRD
+preplace port uart_Sama_boot -pg 1 -lvl 5 -x 1800 -y 520 -defaultsOSRD
+preplace port UART1_TX -pg 1 -lvl 5 -x 1800 -y 120 -defaultsOSRD
+preplace port UART1_RX -pg 1 -lvl 0 -x 0 -y 1430 -defaultsOSRD
+preplace port FCLK_200 -pg 1 -lvl 5 -x 1800 -y 310 -defaultsOSRD
+preplace port I2C_SDA_I -pg 1 -lvl 0 -x 0 -y 1400 -defaultsOSRD
+preplace port I2C_SDA_O -pg 1 -lvl 5 -x 1800 -y 190 -defaultsOSRD
+preplace port I2C_SDA_T -pg 1 -lvl 5 -x 1800 -y 220 -defaultsOSRD
+preplace port I2C_SCL_I -pg 1 -lvl 0 -x 0 -y 1290 -defaultsOSRD
+preplace port I2C_SCL_O -pg 1 -lvl 5 -x 1800 -y 250 -defaultsOSRD
+preplace port I2C_SCL_T -pg 1 -lvl 5 -x 1800 -y 280 -defaultsOSRD
+preplace port Fifo_HF_0 -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace port Runc_CLK_Found_0 -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port Runc_CLK_Lost_0 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port RunC_CLK_OK_0 -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port locked_0 -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port PSDONE_0 -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port CLK_failed_0 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port RESET_IN_0 -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port FCLK_50 -pg 1 -lvl 5 -x 1800 -y 340 -defaultsOSRD
+preplace port FCLK_25 -pg 1 -lvl 5 -x 1800 -y 370 -defaultsOSRD
+preplace port CLK_200_main -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace portBus CS_ENABLE_0 -pg 1 -lvl 5 -x 1800 -y 1430 -defaultsOSRD
+preplace portBus PWR_EN_0 -pg 1 -lvl 5 -x 1800 -y 1460 -defaultsOSRD
+preplace portBus OVC_CH_0 -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace portBus CALIBRAZIONE_0 -pg 1 -lvl 5 -x 1800 -y 1490 -defaultsOSRD
+preplace portBus CLK_SEL_out_0 -pg 1 -lvl 5 -x 1800 -y 1520 -defaultsOSRD
+preplace portBus Rc_CLK_est_int_0 -pg 1 -lvl 5 -x 1800 -y 1550 -defaultsOSRD
+preplace portBus ENERGY_MAX_0 -pg 1 -lvl 5 -x 1800 -y 1580 -defaultsOSRD
+preplace portBus RITARDO_0 -pg 1 -lvl 5 -x 1800 -y 1610 -defaultsOSRD
+preplace portBus Runc_CLK_ResFlg_0 -pg 1 -lvl 5 -x 1800 -y 1640 -defaultsOSRD
+preplace portBus Res_TagFlg_0 -pg 1 -lvl 5 -x 1800 -y 1670 -defaultsOSRD
+preplace portBus RC_Puls_1ms_0 -pg 1 -lvl 5 -x 1800 -y 1700 -defaultsOSRD
+preplace portBus RC_EvSecEn_0 -pg 1 -lvl 5 -x 1800 -y 1730 -defaultsOSRD
+preplace portBus Runc_Val_Tag0_0 -pg 1 -lvl 5 -x 1800 -y 1760 -defaultsOSRD
+preplace portBus RC_Tag_OK_0 -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace portBus PPS_contati_0 -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace portBus FREQ_EVENTI_0_0 -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace portBus FREQ_EVENTI_1_0 -pg 1 -lvl 0 -x 0 -y 750 -defaultsOSRD
+preplace portBus FREQ_EVENTI_2_0 -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace portBus FREQ_EVENTI_3_0 -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace portBus FREQ_EVENTI_4_0 -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
+preplace portBus FREQ_EVENTI_5_0 -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace portBus FREQ_EVENTI_6_0 -pg 1 -lvl 0 -x 0 -y 900 -defaultsOSRD
+preplace portBus FREQ_EVENTI_7_0 -pg 1 -lvl 0 -x 0 -y 930 -defaultsOSRD
+preplace portBus FREQ_EVENTI_8_0 -pg 1 -lvl 0 -x 0 -y 960 -defaultsOSRD
+preplace portBus FREQ_EVENTI_9_0 -pg 1 -lvl 0 -x 0 -y 990 -defaultsOSRD
+preplace portBus FREQ_EVENTI_10_0 -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace portBus FREQ_EVENTI_11_0 -pg 1 -lvl 0 -x 0 -y 1050 -defaultsOSRD
+preplace portBus FREQ_EVENTI_12_0 -pg 1 -lvl 0 -x 0 -y 1080 -defaultsOSRD
+preplace portBus FREQ_EVENTI_13_0 -pg 1 -lvl 0 -x 0 -y 1110 -defaultsOSRD
+preplace portBus FREQ_EVENTI_14_0 -pg 1 -lvl 0 -x 0 -y 1140 -defaultsOSRD
+preplace portBus FREQ_EVENTI_15_0 -pg 1 -lvl 0 -x 0 -y 1170 -defaultsOSRD
+preplace portBus FREQ_EVENTI_16_0 -pg 1 -lvl 0 -x 0 -y 1200 -defaultsOSRD
+preplace portBus FREQ_EVENTI_17_0 -pg 1 -lvl 0 -x 0 -y 1230 -defaultsOSRD
+preplace portBus FREQ_EVENTI_18_0 -pg 1 -lvl 0 -x 0 -y 1260 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 3 -x 1110 -y 1330 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 640 -y 340 -defaultsOSRD
+preplace inst RunControl_AXI_0 -pg 1 -lvl 3 -x 1110 -y 840 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1500 -y 220 -defaultsOSRD
+preplace inst rst_ps7_0_200M -pg 1 -lvl 1 -x 250 -y 430 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 4 -x 1500 -y 1600 -defaultsOSRD
+preplace inst axi_uartlite_1 -pg 1 -lvl 4 -x 1500 -y 530 -defaultsOSRD
+preplace netloc processing_system7_0_UART1_TX 1 4 1 NJ 120
+preplace netloc UART1_RX_1 1 0 5 NJ 1430 NJ 1430 NJ 1430 NJ 1430 1730
+preplace netloc processing_system7_0_I2C1_SDA_O 1 4 1 1740J 190n
+preplace netloc processing_system7_0_I2C1_SDA_T 1 4 1 NJ 220
+preplace netloc I2C_SDA_I_1 1 0 5 NJ 1400 NJ 1400 780J 1420 NJ 1420 1720
+preplace netloc processing_system7_0_I2C1_SCL_T 1 4 1 NJ 280
+preplace netloc processing_system7_0_I2C1_SCL_O 1 4 1 1740J 250n
+preplace netloc I2C_SCL_I_1 1 0 5 NJ 1290 NJ 1290 930J 1240 NJ 1240 1710
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 80 530 NJ 530 820J 450 NJ 450 1690
+preplace netloc rst_ps7_0_200M_peripheral_aresetn 1 1 3 460 1150 780 1230 1310J
+preplace netloc OVC_CH_0_1 1 0 4 60J 550 NJ 550 820 1600 NJ
+preplace netloc Fifo_HF_0_1 1 0 3 NJ 690 NJ 690 830J
+preplace netloc RC_Tag_OK_0_1 1 0 3 NJ 660 NJ 660 840J
+preplace netloc Runc_CLK_Found_0_1 1 0 3 NJ 630 NJ 630 850J
+preplace netloc Runc_CLK_Lost_0_1 1 0 3 NJ 600 NJ 600 800J
+preplace netloc RunC_CLK_OK_0_1 1 0 3 20J 590 NJ 590 880J
+preplace netloc PPS_contati_0_1 1 0 4 30J 580 NJ 580 790 1620 NJ
+preplace netloc locked_0_1 1 0 3 40J 570 NJ 570 890J
+preplace netloc PSDONE_0_1 1 0 3 50J 560 NJ 560 810J
+preplace netloc CLK_failed_0_1 1 0 3 NJ 160 NJ 160 900J
+preplace netloc RESET_IN_0_1 1 0 3 70J 540 NJ 540 NJ
+preplace netloc FREQ_EVENTI_0_0_1 1 0 3 NJ 720 NJ 720 810J
+preplace netloc FREQ_EVENTI_1_0_1 1 0 3 NJ 750 NJ 750 800J
+preplace netloc FREQ_EVENTI_2_0_1 1 0 3 NJ 780 NJ 780 780J
+preplace netloc FREQ_EVENTI_3_0_1 1 0 3 NJ 810 NJ 810 780J
+preplace netloc FREQ_EVENTI_4_0_1 1 0 3 NJ 840 NJ 840 NJ
+preplace netloc FREQ_EVENTI_5_0_1 1 0 3 NJ 870 NJ 870 780J
+preplace netloc FREQ_EVENTI_6_0_1 1 0 3 NJ 900 NJ 900 780J
+preplace netloc FREQ_EVENTI_7_0_1 1 0 3 NJ 930 NJ 930 800J
+preplace netloc FREQ_EVENTI_8_0_1 1 0 3 NJ 960 NJ 960 810J
+preplace netloc FREQ_EVENTI_9_0_1 1 0 3 NJ 990 NJ 990 830J
+preplace netloc FREQ_EVENTI_10_0_1 1 0 3 NJ 1020 NJ 1020 840J
+preplace netloc FREQ_EVENTI_11_0_1 1 0 3 NJ 1050 NJ 1050 850J
+preplace netloc FREQ_EVENTI_12_0_1 1 0 3 NJ 1080 420J 1070 860J
+preplace netloc FREQ_EVENTI_13_0_1 1 0 3 NJ 1110 430J 1080 880J
+preplace netloc FREQ_EVENTI_14_0_1 1 0 3 NJ 1140 440J 1090 890J
+preplace netloc FREQ_EVENTI_15_0_1 1 0 3 NJ 1170 470J 1100 900J
+preplace netloc FREQ_EVENTI_16_0_1 1 0 3 NJ 1200 480J 1110 910J
+preplace netloc FREQ_EVENTI_17_0_1 1 0 3 NJ 1230 490J 1120 920J
+preplace netloc FREQ_EVENTI_18_0_1 1 0 3 NJ 1260 500J 1130 930J
+preplace netloc vio_0_probe_out0 1 4 1 1740J 1430n
+preplace netloc vio_0_probe_out1 1 4 1 1750J 1460n
+preplace netloc processing_system7_0_FCLK_CLK1 1 4 1 NJ 340
+preplace netloc processing_system7_0_FCLK_CLK2 1 4 1 1740J 360n
+preplace netloc CLK_200_main_1 1 0 4 80 330 450 1140 920 1220 1300
+preplace netloc processing_system7_0_FCLK_CLK0 1 4 1 1740J 310n
+preplace netloc vio_0_probe_out2 1 4 1 1760J 1490n
+preplace netloc vio_0_probe_out3 1 4 1 1770J 1520n
+preplace netloc vio_0_probe_out4 1 4 1 1780J 1550n
+preplace netloc vio_0_probe_out5 1 4 1 1730J 1580n
+preplace netloc vio_0_probe_out6 1 4 1 NJ 1610
+preplace netloc vio_0_probe_out7 1 4 1 1740J 1630n
+preplace netloc vio_0_probe_out8 1 4 1 1770J 1650n
+preplace netloc vio_0_probe_out9 1 4 1 1730J 1670n
+preplace netloc vio_0_probe_out10 1 4 1 1700J 1690n
+preplace netloc vio_0_probe_out11 1 4 1 1690J 1710n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 870 310n
+preplace netloc AXI_STR_RXD_0_1 1 0 3 NJ 1320 NJ 1320 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 890 330n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 470 520 810J 440 NJ 440 1700
+preplace netloc processing_system7_0_DDR 1 4 1 NJ 60
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 1720J 80n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 2 880 460 1290J
+preplace netloc axi_uartlite_1_UART 1 4 1 NJ 520
+levelinfo -pg 1 0 250 640 1110 1500 1800
+pagesize -pg 1 -db -bbox -sgen -210 0 2000 1780
+"
+}
+{
+   "da_axi4_cnt":"15",
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"54",
+   "da_ps7_cnt":"1"
+}

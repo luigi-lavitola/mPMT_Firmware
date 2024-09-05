@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep  5 18:09:42 2024
+# Process ID: 25644
+# Current directory: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12280 D:\LAVORO\Istituto Nazionale di Fisica Nucleare\Alfonso Boiano - T2K\Xilinx\mPMT\MAIN_ACQ-Sep2024\MAIN_ACQ_ZYNQ_v6_BUG_fixing\MAIN_ACQ\MAIN_ACQ.xpr
+# Log file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/vivado.log
+# Journal file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ'
+INFO: [Project 1-313] Project file moved from '/home/tortone/devel/HyperK/vivado/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/myip2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/RunControl_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'TOP_block_processing_system7_0_0' generated file not found 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/sources_1/bd/TOP_block/ip/TOP_block_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1019.914 ; gain = 356.875
+update_compile_order -fileset sources_1
+open_bd_design {D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/sources_1/bd/TOP_block/TOP_block.bd}
+CRITICAL WARNING: [BD 41-1287] Associated interface by name S_AXI_0 not found for clock port /CLK_200_main
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_200M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_1
+Successfully read diagram <TOP_block> from BD file <D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-Sep2024/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/sources_1/bd/TOP_block/TOP_block.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.656 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 18:10:54 2024...

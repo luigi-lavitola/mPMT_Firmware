@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/SER/Desktop/T2K/mPMT/MAIN_ACQ_ZYNQ _v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/sim_1/new/TB_ClockSafe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_CLK_SAFE'

@@ -1,0 +1,1504 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep  5 19:47:02 2024
+| Host         : PC-SER-DELL-1 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file TOP_methodology_drc_routed.rpt -pb TOP_methodology_drc_routed.pb -rpx TOP_methodology_drc_routed.rpx
+| Design       : TOP
+| Device       : xc7z014sclg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 289
++-----------+------------------+------------------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                                  | Violations |
++-----------+------------------+------------------------------------------------------------------------------+------------+
+| TIMING-2  | Critical Warning | Invalid primary clock source pin                                             | 12         |
+| TIMING-3  | Critical Warning | Invalid primary clock on Clock Modifying Block                               | 7          |
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree                           | 3          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                                  | 19         |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                                    | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                                 | 61         |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain                              | 1          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                                            | 1          |
+| TIMING-10 | Warning          | Missing property on synchronizer                                             | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                                                | 58         |
+| TIMING-20 | Warning          | Non-clocked latch                                                            | 76         |
+| TIMING-23 | Warning          | Combinational loop found                                                     | 19         |
+| TIMING-28 | Warning          | Auto-derived clock referenced by a timing constraint                         | 12         |
+| TIMING-29 | Warning          | Inconsistent pair of multicycle paths                                        | 1          |
+| TIMING-47 | Warning          | False path or asynchronous clock group between synchronous clocks            | 14         |
+| XDCB-2    | Warning          | Clock defined on multiple objects                                            | 1          |
+| XDCB-3    | Warning          | Same clock mentioned in multiple groups in the same set_clock_groups command | 1          |
+| XDCH-1    | Warning          | Hold option missing in multicycle path constraint                            | 1          |
++-----------+------------------+------------------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#2 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#3 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#4 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#5 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#6 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#7 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#8 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#9 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#10 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#11 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#12 Critical Warning
+Invalid primary clock source pin  
+A primary clock RING_OSC is created on an inappropriate pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_lower.BUFG_inst/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-3#1 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#2 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#3 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#4 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#5 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#6 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#7 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock RING_OSC is created on the output pin or net inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/buf_inst_upper.BUFR_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock multiphase_clock/inst/CLK_IN is defined downstream of clock CLK_25MHZ and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-4#2 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock multiphase_clock/inst/CLK_IN is defined downstream of clock REF_CLK2_P and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-4#3 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock multiphase_clock/inst/CLK_IN is defined downstream of clock REF_CLK_P and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock multiphase_clock/inst/CLK_IN is created on an inappropriate internal pin multiphase_clock/inst/CLK_IN. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[0]/PRE, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, TOP_block_i/TOP_block_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/Inst_raccolta_dati/pp1[0].Inst_single_channel_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_Pulser/ContaPulser_reg[0]_bret/CLR, Inst_Pulser/ContaPulser_reg[0]_bret__1/CLR, Inst_Pulser/ContaPulser_reg[10]_bret/CLR, Inst_Pulser/ContaPulser_reg[10]_bret__0/CLR, Inst_Pulser/ContaPulser_reg[10]_bret__1/CLR, Inst_Pulser/ContaPulser_reg[11]_bret/CLR, Inst_Pulser/ContaPulser_reg[11]_bret__0/CLR, Inst_Pulser/ContaPulser_reg[11]_bret__1/CLR, Inst_Pulser/ContaPulser_reg[12]_bret/CLR, Inst_Pulser/ContaPulser_reg[12]_bret__0/CLR, Inst_Pulser/ContaPulser_reg[12]_bret__1/CLR, Inst_Pulser/ContaPulser_reg[13]_bret/CLR, Inst_Pulser/ContaPulser_reg[13]_bret__0/CLR, Inst_Pulser/ContaPulser_reg[13]_bret__1/CLR, Inst_Pulser/ContaPulser_reg[1]_bret/CLR (the first 15 of 2181 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#27 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#28 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#29 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#30 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#31 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#32 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#33 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#34 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#35 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#36 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#37 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#38 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#39 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#40 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#41 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#42 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#43 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#44 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#45 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#46 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#47 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#48 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#49 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#50 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#51 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#52 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#53 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#54 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#55 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#56 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#57 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#58 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#59 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Reset_Ring_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Reset_Ring_reg/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/abilita_reg/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[0]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[1]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[2]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[3]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[4]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[5]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[6]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/contatore_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#60 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/dato_stabile_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/dato_stabile_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#61 Warning
+LUT drives async reset alert  
+LUT cell inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_blocco_time/channel_event[76]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[0]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[1]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_p_reg[2]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[0]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[1]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[2]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/aspetta_reg[3]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[0]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[10]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[11]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[12]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[1]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[2]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[3]/CLR, inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_SPI/campionati_reg[4]/CLR (the first 15 of 396 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X48Y36 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell FIFO_DATA_32bit/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[0] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[10] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[11] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[12] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[13] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[14] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[15] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[16] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[17] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[18] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[1] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[2] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[3] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[4] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[5] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[6] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[7] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[8] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CS[9] relative to clock(s) CLK_25_OUT, RING_OSC
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[0] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[10] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[11] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[12] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[13] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[14] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[15] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[16] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[17] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[18] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[1] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[2] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[3] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[4] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[5] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[6] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[7] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[8] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on ADC_SCL[9] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[0] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[10] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[11] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[12] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[13] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[14] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[15] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[16] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[17] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[18] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[1] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[2] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[3] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[4] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[5] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[6] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[7] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[8] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on PWR_EN[9] relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on SAMA_TX relative to clock(s) CLK_25_OUT
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3] cannot be properly analyzed as its control pin inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/FSM_onehot_next_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[0].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[10].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[11].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[12].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[13].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[14].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[15].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[16].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[17].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[18].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[1].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[2].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[3].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[4].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[5].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[6].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[7].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[8].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/DI[0] and inst_MULTYCHANNEL/pp1[9].Inst_single_channel/Inst_CS_latch/Inst_OSCILLATORE/CARRY4_inst0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 55 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 56 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 58 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 60 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#5 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 62 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#6 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 64 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#7 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 65 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#8 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 66 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#9 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 67 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#10 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out7_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 68 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT6]
+Related violations: <none>
+
+TIMING-28#11 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out7_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 69 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT6]
+Related violations: <none>
+
+TIMING-28#12 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out7_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 70 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT6]
+Related violations: <none>
+
+TIMING-29#1 Warning
+Inconsistent pair of multicycle paths  
+Setup and hold multicycle path constraints should typically reference the same -start pair for SLOW-to-FAST synchronous clocks or -end pair for FAST-to-SLOW synchronous clocks (see constraint positions 45, 46 in the Timing Constraint window in Vivado IDE)
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out2_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#2 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out3_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#3 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out4_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#4 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out5_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#5 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out6_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#6 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out1_clk_wiz_0 and clk_out7_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#7 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and clk_out1_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#8 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and clk_out3_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#9 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out3_clk_wiz_0 and clk_out1_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#10 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out4_clk_wiz_0 and clk_out1_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#11 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out5_clk_wiz_0 and clk_out4_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#12 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out6_clk_wiz_0 and clk_out1_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#13 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out7_clk_wiz_0 and clk_out1_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#14 Warning
+False path or asynchronous clock group between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk_out7_clk_wiz_0 and clk_out6_clk_wiz_0 (see constraint position 22 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+XDCB-2#1 Warning
+Clock defined on multiple objects  
+The clock RING_OSC is defined on multiple objects. Although this is logically functional for timing analysis, it cannot exist in hardware. It is recommended to define a primary clock on a single object.
+create_clock -period 4.000 -name RING_OSC -waveform {0.000 2.000} -add [get_nets -hierarchical -filter { NAME =~  "*FREQ*" && NAME !~  "*METER*" && NAME !~  "*ila*" }]
+C:/Users/SER/Desktop/T2K/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/constrs_1/new/TOP.xdc (Line: 806)
+Related violations: <none>
+
+XDCB-3#1 Warning
+Same clock mentioned in multiple groups in the same set_clock_groups command  
+The same clock(s) mentioned in more than one group within the same set_clock_groups constraint: CLK_25MHZ, REF_CLK2_P, REF_CLK_P, clk_out1_clk_wiz_0, clk_out2_clk_wiz_0, clk_out3_clk_wiz_0, clk_out4_clk_wiz_0, clk_out5_clk_wiz_0, clk_out6_clk_wiz_0, clk_out7_clk_wiz_0
+This is not a valid scenario and should be corrected.
+set_clock_groups -name CLK_ASYNC -asynchronous -group [get_clocks [list clk_fpga_0 CLK_25MHZ REF_CLK2_P REF_CLK_P [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT1]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT2]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT3]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT4]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT5]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT6]]]] -group [get_clocks [list clk_fpga_0 CLK_25MHZ REF_CLK2_P REF_CLK_P [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT1]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT2]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT3]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT4]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT5]] [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT6]]]]
+C:/Users/SER/Desktop/T2K/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/constrs_1/new/TOP.xdc (Line: 769)
+Related violations: <none>
+
+XDCH-1#1 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -from [get_clocks CLK_25MHZ] -to [get_clocks -of_objects [get_pins multiphase_clock/inst/mmcm_adv_inst/CLKOUT0]] 2
+C:/Users/SER/Desktop/T2K/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.srcs/constrs_1/new/TOP.xdc (Line: 802)
+Related violations: <none>
+
+

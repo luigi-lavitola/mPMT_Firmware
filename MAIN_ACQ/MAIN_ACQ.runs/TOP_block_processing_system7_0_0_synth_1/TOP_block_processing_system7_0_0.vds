@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep  5 19:27:51 2024
+# Process ID: 23988
+# Current directory: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log TOP_block_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_block_processing_system7_0_0.tcl
+# Log file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1/TOP_block_processing_system7_0_0.vds
+# Journal file: D:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.runs/TOP_block_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_block_processing_system7_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/myip2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/ip_repo/RunControl_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/LAVORO/Istituto Nazionale di Fisica Nucleare/Alfonso Boiano - T2K/Xilinx/mPMT/MAIN_ACQ-DEVEL/MAIN_ACQ_ZYNQ_v6_BUG_fixing/MAIN_ACQ/MAIN_ACQ.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP TOP_block_processing_system7_0_0, cache-ID = 3c4060e2f43922c4.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 19:27:59 2024...
